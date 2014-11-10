@@ -1,0 +1,22 @@
+Copy of Lindsey's email with cmsDriver commands to generate cfg files.
+Run Full Simulation on LHE File (From Madgraph) to RECO.
+
+### LHE to GEN step
+
+cmsDriver.py step0 --conditions auto:startup -s NONE --eventcontent RAWSIM --datatier GEN --filein file:my_lhe.lhe --fileout file:step0.root --no_exec
+
+### SIM STEP
+###(with matching, just comment out "jetMatch" pset to remove jet matching)
+cmsDriver.py step1 -s GEN,SIM --conditions auto:startup --datatier GEN-SIM -n 500 --eventcontent RAWSIM --evt_type Hadronizer_MgmMatchTuneZ2star_8TeV_madgraph_cff --filein file:step0.root --fileout file:step1.root --no_exec
+
+#OR
+cmsDriver.py step1 -s GEN,SIM --conditions auto:startup --datatier GEN-SIM -n 500 --eventcontent RAWSIM --evt_type Hadronizer_MgmMatchTune4C_8TeV_madgraph_pythia8_cff --filein file:step0.root --fileout file:step1.root --no_exec
+
+### DIGI and HLT (New Version and Old)
+
+cmsDriver.py REDIGI --step DIGI,L1,DIGI2RAW,HLT:7E33v2 --runsScenarioForMC Run2012_AB_C_D_oneRunPerEra --conditions START53_V7N::All --pileup fromDB --datamix NODATAMIXER --eventcontent RAWSIM --datatier GEN-SIM-RAW --no_exec
+
+#cmsDriver.py step2  --conditions auto:startup -s DIGI,L1,DIGI2RAW,HLT,RAW2DIGI,L1Reco --pileup_input das:/RelValMinBias/CMSSW_5_2_1-START52_V4-v1/GEN-SIM --datatier GEN-SIM-DIGI-RAW-HLTDEBUG --pileup default -n 1000 --eventcontent FEVTDEBUGHLT --filein file:step1.root  --fileout file:step2.root --no_exec
+
+### RECO
+cmsDriver.py step3  --conditions auto:startup --pileup_input das:/RelValMinBias/CMSSW_5_2_1-START52_V4-v1/GEN-SIM -n 1000 --eventcontent RECOSIM -s RAW2DIGI,L1Reco,RECO --datatier GEN-SIM-RECO --pileup default --filein file:step2.root  --fileout file:step3.root --no_exec

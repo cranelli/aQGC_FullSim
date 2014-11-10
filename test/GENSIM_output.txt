@@ -1,0 +1,161 @@
+[cranelli@interactive-0-3 test]$ cmsRun Hadronizer_MgmMatchTuneZ2star_8TeV_madgraph_cff_GEN_SIM.py
+23-Sep-2014 11:36:27 EDT  Initiating request to open file file:step0.root
+23-Sep-2014 11:36:28 EDT  Successfully opened file file:step0.root
+     MSTU(12)       changed from              0 to          12345
+1****************** PYINIT: initialization of PYTHIA routines *****************
+ ==== PYTHIA WILL USE LHAPDF ====
+ *************************************
+ *       LHAPDF Version 5.9.1        *
+ *   Configured for the following:   *
+ *             All PDFs              *
+ *          LOW MEMORY option        *
+ *    Maximum  1 concurrent set(s)   *
+ *************************************
+
+ >>>>>> PDF description: <<<<<<
+ CTEQ6L1 - LO with LO alpha_s                                    
+ Reference:                                                      
+ J. Pumplin, D.R. Stump, J. Huston, H.L. Lai, P. Nadolsky,       
+ W.K. Tung                                                       
+ hep-ph/0201195                                                  
+ >>>>>>                   <<<<<<
+
+ Parametrization: CTEQ6           
+
+ ==============================================
+ PDFset name /cvmfs/cms.cern.ch/slc5_amd64_gcc462/external/lhapdf/5.9.1/share/lhapdf/PDFsets/
+ with          1 members
+ ====  initialized. ===========================
+ Strong coupling at Mz for PDF is:  0.12978
+
+ ==============================================================================
+ I                                                                            I
+ I         PYTHIA will be initialized for p+ on p+ user configuration         I
+ I            with   4000.000 GeV on   4000.000 GeV beam energies             I
+ I                                                                            I
+ I           corresponding to   8000.000 GeV center-of-mass energy            I
+ I                                                                            I
+ ==============================================================================
+
+ ******** PYMAXI: summary of differential cross-section maximum search ********
+
+           ==========================================================
+           I                                      I                 I
+           I  ISUB  Subprocess name               I  Maximum value  I
+           I                                      I                 I
+           ==========================================================
+           I                                      I                 I
+           I    4   User process 0                I    5.8901D-11   I
+           I   96   Semihard QCD 2 -> 2           I    8.0723D+03   I
+           I                                      I                 I
+           ==========================================================
+
+ ****** PYMULT: initialization of multiple interactions for MSTP(82) = 4 ******
+        pT0 = 2.70 GeV gives sigma(parton-parton) = 4.56D+02 mb: accepted
+
+ ****** PYMIGN: initialization of multiple interactions for MSTP(82) = 4 ******
+        pT0 = 2.70 GeV gives sigma(parton-parton) = 1.80D+02 mb: accepted
+
+ ********************** PYINIT: initialization completed **********************
+ ****************** PYSLHA v1.14: SUSY/BSM SPECTRUM INTERFACE *****************
+ * (PYSLHA:) Last Change 10 Jun 2010 - P.Z. Skands
+ * (PYSLHA:) Ignoring MASS  entry for KF =        5 (SLHA read-in not allowed)
+ * (PYSLHA:) Reading  MASS  entry for KF =        6, pole mass =     172.000
+ * (PYSLHA:) Ignoring MASS  entry for KF =       15 (SLHA read-in not allowed)
+ * (PYSLHA:) Reading  MASS  entry for KF =       23, pole mass =      91.188
+ * (PYSLHA:) Reading  MASS  entry for KF =       25, pole mass =     125.000
+ * (PYSLHA:) Ignoring MASS  entry for KF =        1 (SLHA read-in not allowed)
+ * (PYSLHA:) Ignoring MASS  entry for KF =        2 (SLHA read-in not allowed)
+ * (PYSLHA:) Ignoring MASS  entry for KF =        3 (SLHA read-in not allowed)
+ * (PYSLHA:) Ignoring MASS  entry for KF =        4 (SLHA read-in not allowed)
+ * (PYSLHA:) Ignoring MASS  entry for KF =       11 (SLHA read-in not allowed)
+ * (PYSLHA:) Ignoring MASS  entry for KF =       12 (SLHA read-in not allowed)
+ * (PYSLHA:) Ignoring MASS  entry for KF =       13 (SLHA read-in not allowed)
+ * (PYSLHA:) Ignoring MASS  entry for KF =       14 (SLHA read-in not allowed)
+ * (PYSLHA:) Ignoring MASS  entry for KF =       16 (SLHA read-in not allowed)
+ * (PYSLHA:) Ignoring MASS  entry for KF =       21 (SLHA read-in not allowed)
+ * (PYSLHA:) Ignoring MASS  entry for KF =       22 (SLHA read-in not allowed)
+ * (PYSLHA:) Reading  MASS  entry for KF =       24, pole mass =      79.824
+ * (PYSLHA:) Allowing DECAY table for KF =        6 but this is NOT recommended.
+ * (PYSLHA:) Allowing DECAY table for KF =       23 but this is NOT recommended.
+ * (PYSLHA:) Allowing DECAY table for KF =       24 but this is NOT recommended.
+ * (PYSLHA:) Ignoring DECAY table for KF =        1 (SLHA read-in not allowed)
+ * (PYSLHA:) Ignoring DECAY table for KF =        2 (SLHA read-in not allowed)
+ * (PYSLHA:) Ignoring DECAY table for KF =        3 (SLHA read-in not allowed)
+ * (PYSLHA:) Ignoring DECAY table for KF =        4 (SLHA read-in not allowed)
+ * (PYSLHA:) Ignoring DECAY table for KF =        5 (SLHA read-in not allowed)
+ * (PYSLHA:) Ignoring DECAY table for KF =       11 (SLHA read-in not allowed)
+ * (PYSLHA:) Ignoring DECAY table for KF =       12 (SLHA read-in not allowed)
+ * (PYSLHA:) Ignoring DECAY table for KF =       13 (SLHA read-in not allowed)
+ * (PYSLHA:) Ignoring DECAY table for KF =       14 (SLHA read-in not allowed)
+ * (PYSLHA:) Ignoring DECAY table for KF =       15 (SLHA read-in not allowed)
+ * (PYSLHA:) Ignoring DECAY table for KF =       16 (SLHA read-in not allowed)
+ * (PYSLHA:) Ignoring DECAY table for KF =       21 (SLHA read-in not allowed)
+ * (PYSLHA:) Ignoring DECAY table for KF =       22 (SLHA read-in not allowed)
+Begin processing the 1st record. Run 1, Event 1, LumiSection 1 at 23-Sep-2014 11:37:59.179 EDT
+Begin processing the 2nd record. Run 1, Event 2, LumiSection 1 at 23-Sep-2014 11:38:41.989 EDT
+Begin processing the 3rd record. Run 1, Event 3, LumiSection 1 at 23-Sep-2014 11:38:54.013 EDT
+Begin processing the 4th record. Run 1, Event 4, LumiSection 1 at 23-Sep-2014 11:39:48.198 EDT
+Begin processing the 5th record. Run 1, Event 5, LumiSection 1 at 23-Sep-2014 11:40:26.357 EDT
+Begin processing the 6th record. Run 1, Event 6, LumiSection 1 at 23-Sep-2014 11:41:55.583 EDT
+Begin processing the 7th record. Run 1, Event 7, LumiSection 1 at 23-Sep-2014 11:42:30.176 EDT
+Begin processing the 8th record. Run 1, Event 8, LumiSection 1 at 23-Sep-2014 11:43:32.019 EDT
+Begin processing the 9th record. Run 1, Event 9, LumiSection 1 at 23-Sep-2014 11:43:52.337 EDT
+Begin processing the 10th record. Run 1, Event 10, LumiSection 1 at 23-Sep-2014 11:44:57.673 EDT
+Begin processing the 11th record. Run 1, Event 11, LumiSection 1 at 23-Sep-2014 11:45:26.155 EDT
+Begin processing the 12th record. Run 1, Event 12, LumiSection 1 at 23-Sep-2014 11:46:06.213 EDT
+Begin processing the 13th record. Run 1, Event 13, LumiSection 1 at 23-Sep-2014 11:46:36.955 EDT
+Begin processing the 14th record. Run 1, Event 14, LumiSection 1 at 23-Sep-2014 11:47:30.786 EDT
+Begin processing the 15th record. Run 1, Event 15, LumiSection 1 at 23-Sep-2014 11:48:25.177 EDT
+Begin processing the 16th record. Run 1, Event 16, LumiSection 1 at 23-Sep-2014 11:49:00.736 EDT
+Begin processing the 17th record. Run 1, Event 17, LumiSection 1 at 23-Sep-2014 11:50:01.459 EDT
+Begin processing the 18th record. Run 1, Event 18, LumiSection 1 at 23-Sep-2014 11:50:41.715 EDT
+Begin processing the 19th record. Run 1, Event 19, LumiSection 1 at 23-Sep-2014 11:51:17.793 EDT
+Begin processing the 20th record. Run 1, Event 20, LumiSection 1 at 23-Sep-2014 11:51:37.743 EDT
+1********* PYSTAT:  Statistics on Number of Events and Cross-sections *********
+
+ ==============================================================================
+ I                                  I                            I            I
+ I            Subprocess            I      Number of points      I    Sigma   I
+ I                                  I                            I            I
+ I----------------------------------I----------------------------I    (mb)    I
+ I                                  I                            I            I
+ I N:o Type                         I    Generated         Tried I            I
+ I                                  I                            I            I
+ ==============================================================================
+ I                                  I                            I            I
+ I   0 All included subprocesses    I           20            20 I  5.890D-11 I
+ I   4 User process 0               I           20            20 I  5.890D-11 I
+ I                                  I                            I            I
+ ==============================================================================
+
+ ********* Total number of errors, excluding junctions =        0 *************
+ ********* Total number of errors, including junctions =        0 *************
+ ********* Total number of warnings =                           0 *************
+ ********* Fraction of events that fail fragmentation cuts =  0.00000 *********
+
+
+Process and cross-section statistics
+------------------------------------
+Process	events	tried	xsec [pb]		accepted [%]
+0	20	20	5.890e-02 +/- 1.871e-04	100.0
+Total	20	20	5.890e-02 +/- 1.871e-04	100.0
+23-Sep-2014 11:52:55 EDT  Closed file file:step0.root
+
+=============================================
+
+MessageLogger Summary
+
+ type     category        sev    module        subroutine        count    total
+ ---- -------------------- -- ---------------- ----------------  -----    -----
+    1 fileAction           -s file_close                             1        1
+    2 fileAction           -s file_open                              2        2
+
+ type    category    Examples: run/evt        run/evt          run/evt
+ ---- -------------------- ---------------- ---------------- ----------------
+    1 fileAction           PostEndRun                        
+    2 fileAction           pre-events       pre-events       
+
+Severity    # Occurrences   Total Occurrences
+--------    -------------   -----------------
+System                  3                   3
